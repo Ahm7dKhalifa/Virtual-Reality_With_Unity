@@ -1,0 +1,68 @@
+
+a =>
+https://developers.google.com/vr/develop/unity/controller-support
+
+
+========================================================
+1. switch to your platform (android/ios)
+=========================================================
+
+===================================================
+2. download AND install GoogleVR sdk for unity
+GoogleVR -> Daydream and google cardboard
+===================================================
+https://developers.google.com/vr/develop/unity/get-started
+
+=====================================================
+3. set some configure in edit/project settings/player -> android
+======================================================
+- packagename
+- min api level (for cardboard must be at least 4.4(19)
+- enable vr supported
+- add headset devices to the vr sdk list
+
+
+========================================================
+4.create empty object called player for ex 
+=======================================================
+note : most goolgle cardboard take first person shooter style
+
+
+==========================================================
+5.put the camera child in player
+=========================================================
+
+===============================================================
+6. add gvr pointer physics raycaster script to the camera
+===============================================================
+for more info about raycaster consepts
+https://unity3d.com/learn/tutorials/topics/physics/raycasting
+https://www.youtube.com/watch?time_continue=216&v=EINgIoTG8D4
+https://www.youtube.com/watch?v=6agwCUaMNWI
+
+
+===============================================================
+7. add GvrEditorEmulator prefab to scene
+===============================================================
+enable head movement in simulation by mouse and alt 
+
+
+===============================================================
+8. add GvrEventSystem prefab to scene
+===============================================================
+- use unity api to make events to custom input 
+
+https://docs.unity3d.com/Manual/EventSystem.html
+https://docs.unity3d.com/ScriptReference/EventSystems.BaseInputModule.html 
+
+
+===============================================================
+9. add GvrReticlePointer prefab to scene (child to the camera)
+===============================================================
+- Draws a circular reticle in front of any object that the user points at.
+
+- The circle dilates if the object is clickable. 
+
+
+all another steps in first linke in resources.txt
+ 
